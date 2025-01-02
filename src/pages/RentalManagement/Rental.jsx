@@ -141,7 +141,7 @@ const Rental = () => {
   
 
   const entriesPerPage = 7;
-  const totalPages = Math.ceil(50 / entriesPerPage);
+  const totalPages = Math.ceil(rentals.length / entriesPerPage);
 
   const handlePageChange = (page) => {
     if (page >= 1 && page <= totalPages) {

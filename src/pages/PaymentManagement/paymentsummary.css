@@ -1,0 +1,122 @@
+/* .user-management {
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .page-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .selected-period-heading {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .filters {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .left {
+    width: 70%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .right {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .dispatcher-select-container,
+  .dispatcher-date-container {
+    position: relative;
+  }
+  
+  .left-select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+  
+  .left-date {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    outline: none;
+    font-size: 13px;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+  
+  .date-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+  }
+  
+  .reset-btn {
+    padding: 10px 15px;
+    background-color: #254e58;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .summary-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .summary-table th,
+  .summary-table td {
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .summary-table th {
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+  }
+  
+  .summary-table tbody tr:nth-child(odd) {
+    background-color: #f7fbfb;
+  }
+  
+  .summary-table tbody tr:nth-child(even) {
+    background-color: #fff;
+  }
+   */

@@ -1,0 +1,276 @@
+.CM-customer-management {
+    padding: 0 20px;
+    background-color: #ffffff;
+    
+}
+
+.CM-page-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.CH-page-title {
+    font-size: 16px;
+    color: #a4a4a4;
+}
+
+.CH-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.CM-filters {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.CM-left {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CM-passenger-input-container {
+    position: relative;
+    width: 35%;
+}
+
+.CM-passenger-select-container {
+    position: relative;
+    width: 20%;
+    margin-right: 330px;
+}
+
+.CH-passenger-select-container {
+    position: relative;
+    width: 20%;
+}
+
+.CM-left-input {
+    width: 80%;
+    height: 40%;
+    padding: 10px 10%;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    outline: none;
+}
+
+.CM-left-select {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px 10%;
+    background-color:#f4f4f4;
+    border-radius: 20px;
+    outline: none;
+    color:#000000a7;
+    font-weight: bold;
+    font-size: 14px;
+    -webkit-appearance: none;
+    /* For Chrome, Safari, Edge */
+    -moz-appearance: none;
+    /* For Firefox */
+    appearance: none;
+    /* For modern browsers */
+    background: none;
+    /* Remove any default background styles */
+}
+
+.CM-select-icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.CM-input-icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.CH-left-date {
+    width: 100%;
+    padding: 10px 10%;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    outline: none;
+    font-size: 13px;
+  }
+
+  .CH-date-icon {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+  }
+
+.CH-passenger-date-container {
+    position: relative;
+    width: 35%;
+  }
+
+.CM-right {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.CM-reset-btn {
+    padding: 10px 15px;
+    background-color: #254e58;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.CM-table-cont {
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.CM-user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout:auto;
+    /* Prevent layout issues */
+}
+
+.CM-user-table td {
+    text-align: left;
+    padding: 15px;
+}
+
+.CM-user-table th {
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+    /* Align text properly */
+}
+
+.CM-user-table th:first-child {
+    border-left: 0;
+}
+
+.CM-user-table th:last-child {
+    border-right: 0;
+}
+
+.CM-user-table td {
+    padding: 14px;
+    font-size: 14px;
+    white-space: nowrap;
+    /* Prevent wrapping */
+    overflow: hidden;
+    /* Hide overflow */
+    text-overflow: ellipsis;
+    /* Add "..." for overflowing text */
+}
+
+.CM-user-table th svg {
+    color: #a4a4a4;
+    text-align: end;
+    font-size: 20px;
+}
+
+/* Alternate row coloring */
+.CM-user-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.CM-user-table tr:nth-child(even) {
+    background-color: #88bdbc32;
+    /* Slightly lighter gray for better contrast */
+}
+
+.CM-details {
+    color: #254e58; /* Green text color */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Show pointer on hover */
+    background: none; /* Ensure no background is visible */
+    border: none; /* Remove any borders */
+    padding: 0; /* Remove padding */
+  }
+  
+  .CM-details:hover {
+    text-decoration: underline; /* Add underline on hover for emphasis */
+  }
+  
+
+.CM-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
+    width: 90%;
+    padding: 0 5%;
+    padding-bottom: 12px;
+}
+
+.CM-pagination-link {
+    background-color: #80cfe3;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.CM-pagination-link.active {
+    background-color: #254e58;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.CM-page-btn {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.CM-page-btn.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.CM-page-btn:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.CM-entries-info,
+.CM-pagination-text {
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.CM-entry-buttons {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    gap: 4px;
+    align-items: center;
+}
+
+.CM-entry-buttons button {
+    background-color: #254e58;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}

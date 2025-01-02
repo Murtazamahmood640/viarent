@@ -1,0 +1,488 @@
+/* Container */
+.inventory-container {
+  padding: 2px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.inventory-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Filter Section */
+.inventory-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inventory-search-box input {
+  padding: 8px 12px 8px 35px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  width: 150px;
+  font-size: 14px;
+  outline: none;
+}
+
+.inventory-search-box .inventory-search-icon {
+  position: absolute;
+  left: 130px;
+  color: #888;
+  font-size: 14px;
+}
+
+.inventory-top-bars {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 650px;
+  padding-right: 80%;
+}
+.inventory-filters{
+  gap: 20px;
+  display: flex;
+}
+.inventory-top-bars input,
+.inventory-top-bars select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  font-size: 14px;
+  background-color: #ddd;
+}
+
+.inventory-top-bars button {
+  padding: 8px 12px;
+  border: 1px solid #254e58;
+  border-radius: 14px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.inventory-change {
+  display: flex;
+  gap: 20px;
+  height: 38px; 
+  position:sticky;
+}
+
+.inventory-top-bars button.reset-btn {
+  background-color: #254e58;
+  padding: 8px 12px;
+  width: 100px;
+}
+
+.inventory-top-bars button.add-btn {
+  background-color: #254e58;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 130px;
+}
+
+
+
+/* Table */
+.table-inventory{
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+.table-inventory th {
+  background-color: #f8f9fa;
+  padding: 12px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.table-inventory td {
+  padding: 12px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.table-inventory tr:nth-child(even) {
+  background-color: #88bdbc24;
+
+}
+
+.table-inventory tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-inventory td button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.table-inventory td button.tick-btn {
+  color: #254e58;
+  background: none;
+  fill: none;
+}
+
+.table-inventory td button.delete-btn {
+  color: red;
+}
+
+.table-inventory td button.report-btn {
+  color :#254e58;
+  font-size: 1.1rem;
+}
+
+.table-inventory td span {
+  font-weight: normal;
+}
+
+/* Status Indicator */
+.inventory-status-indicator {
+  display: flex;
+  gap: 5px;
+}
+
+.inventory-status-square {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.inventory-status-square.available {
+  background-color: #28a745; /* Green */
+}
+
+.inventory-status-square.booked {
+  background-color: #ffc107; /* Yellow */
+}
+
+.inventory-status-square.maintenance {
+  background-color: #dc3545; /* Red */
+}
+
+.inventory-status-text {
+  font-weight: normal;
+}
+
+/* Modal */
+.inventory-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.inventory-modal-content {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 400px;
+}
+
+.inventory-modal-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.inventory-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Modal Form Styling */
+.inventory-modal-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.inventory-form-row {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.inventory-form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.inventory-form-group label {
+  font-size: 13px;
+  color: #333;
+  font-weight: normal;
+  margin-bottom: 6px;
+  margin-top: 3px;
+}
+
+.inventory-form-group input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.inventory-form-group select {
+  padding: 9px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.inventory-form-single select {
+  padding: 9px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.inventory-form-single label {
+  font-size: 13px;
+  color: #333;
+  font-weight: normal;
+  margin-bottom: 6px;
+  margin-top: 3px;
+}
+
+.inventory-save-btn {
+  padding: 10px;
+  background-color: #2f5d62;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  margin-left: 350px;
+}
+
+.inventory-save-btn:hover {
+  background-color: #25494f;
+}
+
+.inventory-savechanges-btn{
+  padding: 10px 12px;
+  background-color: #254e58;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: center;
+  margin-left: 270px;
+}
+
+
+/*Delete*/
+.inventory-delete-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.inventory-delete-modal-content {
+  background: white;
+  padding: 10px 2rem;
+  border-radius: 8px;
+  width: 350px;
+  text-align: center;
+  position: relative;
+}
+
+.inventory-delete-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+
+.inventory-delete-modal h3 {
+  margin-bottom: -10px;
+  margin-top: 15px;
+  color: #333;
+}
+
+.inventory-delete-modal p {
+  margin-bottom: 2rem;
+  color: #555;
+  font-size: 16px;
+}
+
+.inventory-delete-modal-actions {
+  display: flex;
+  justify-content:center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.inventory-delete-cancel-btn {
+  background: #fff;
+  color: #333;
+  border: 2px solid #254e58;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.inventory-delete-confirm-btn {
+  background: #254e58;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 90px;
+}
+
+.inventory-delete-cancel-btn:hover {
+  background: #ddd;
+}
+
+.inventory-delete-confirm-btn:hover {
+  background: #25494f;
+}
+
+
+/* Health Check Form */
+.inventory-health-check-form .inventory-form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.inventory-health-check-form {
+  margin-top: 20px;
+}
+
+.inventory-health-check-form h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  flex: 1;
+  margin-left: 0px;
+}
+
+.inventory-health-check-form .inventory-form-row label {
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+  margin-right: 30px; /* Space between the label and checkboxes */
+}
+
+.inventory-checkbox-group {
+  
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.inventory-checkbox-group label {
+  flex-direction: row;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between the checkbox and its label */
+  justify-content: flex-start;
+}
+
+.inventory-checkbox-group input[type="checkbox"] {
+  accent-color: #254e58; /* Custom color for checkbox */
+  margin: 0; /* Remove any default margin */
+  vertical-align: middle; /* Align the checkbox with the text */
+}
+
+
+.inventory-health-check-form .slider {
+  font-size: 14px;
+  color: #555;
+  top: 50px;
+}
+
+.inventory-form-column label{
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.inventory-form-column input{
+  background-color: #f1f1f1;
+
+}
+
+.inventory-health-close-btn{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.inventory-modal-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  gap: 80px;
+}
+
+.inventory-modal-actions .maintenance-btn,
+.inventory-modal-actions .proceed-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-items: center;
+}
+
+.inventory-modal-actions .maintenance-btn {
+  background-color: #fff; /* Red */
+  color: #254e58;
+  border: 2px solid #254e58;
+}
+
+.inventory-modal-actions .proceed-btn {
+  background-color: #254e58; /* Green */
+  color: white;
+}
+
+.inventory-modal-actions .maintenance-btn:hover {
+  background-color: #DDD;
+}
+
+.inventory-modal-actions .proceed-btn:hover {
+  background-color: #25494f;
+}
+

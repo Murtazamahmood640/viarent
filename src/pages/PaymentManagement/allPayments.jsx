@@ -74,7 +74,7 @@ const AllPayments = () => {
   ];
 
   const entriesPerPage = 7;
-  const totalPages = Math.ceil(50 / entriesPerPage);
+  const totalPages = Math.ceil(incidents.length / entriesPerPage);
 
   const handlePageChange = (page) => {
     if (page >= 1 && page <= totalPages) {
@@ -101,7 +101,7 @@ const AllPayments = () => {
     currentPage * entriesPerPage
   );
 
-  const totalEntries = 50;
+  const totalEntries = filteredIncidents.length;
   const startEntry = (currentPage - 1) * entriesPerPage + 1;
   const endEntry = Math.min(currentPage * entriesPerPage, totalEntries);
 

@@ -165,7 +165,7 @@ const Rental = () => {
     currentPage * entriesPerPage
   );
 
-  const totalEntries = 50;
+  const totalEntries = filteredRentals.length;
   const startEntry = (currentPage - 1) * entriesPerPage + 1;
   const endEntry = Math.min(currentPage * entriesPerPage, totalEntries);
 

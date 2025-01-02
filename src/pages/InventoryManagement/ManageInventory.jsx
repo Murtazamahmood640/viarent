@@ -109,14 +109,14 @@ const ManageInventory = () => {
     closeDeleteModal();
   };
   const entriesPerPage = 7;
-  const totalPages = Math.ceil(50 / entriesPerPage);
+  const totalPages = Math.ceil(initialData.length / entriesPerPage);
 
   const handlePageChange = (page) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
     }
   };
-  const totalEntries = 50;
+  const totalEntries = initialData.length;
   const startEntry = (currentPage - 1) * entriesPerPage + 1;
   const endEntry = Math.min(currentPage * entriesPerPage, totalEntries);
 

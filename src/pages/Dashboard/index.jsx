@@ -1,14 +1,9 @@
 import React from "react";
-import {
-  People,
-  DirectionsCar,
-  LocalTaxi,
-} from "@mui/icons-material"; // Importing relevant MUI icons
 
 import { GiReceiveMoney } from "react-icons/gi";
 import { Bar } from "react-chartjs-2"; // Importing Bar component
 import { MdInventory2 } from "react-icons/md";
-import { FaUsers } from "react-icons/fa6";
+import { FaUsers, FaUser } from "react-icons/fa6";
 import { MdOutlinePendingActions } from "react-icons/md";
 
 import {
@@ -90,7 +85,7 @@ const Dashboard = () => {
       <div className="cards">
         {/* Total Users Card */}
         <div className="card">
-          <People className="card-icon" />
+          <FaUser className="card-icon" />
           <div className="card-content">
             <h4>Total Customers</h4>
             <p>200</p>
